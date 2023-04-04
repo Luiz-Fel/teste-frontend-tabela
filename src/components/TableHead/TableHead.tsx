@@ -8,14 +8,28 @@ function TableHead({
   sortTable,
 }: TableHeadProps) {
 
-  const icon = sortDirection === "asc" ? "▲" : "▼";
+      const renderTableHeadCell = (column: string, label: string) => {
+        const isSorted = selectedColumn === column;
+        const icon = sortDirection === "asc" ? "▲" : "▼";
+
+        return (
+          <Th onClick={() => sortTable(column)}>
+            <ThContent>
+              <div>{label}</div>
+              <span
+                style={{color: isSorted ? "black" : "transparent",}}>
+                {icon}
+              </span>
+            </ThContent>
+          </Th>
+        );
+      };
+
   return (
     <Thead>
       <Tr>
         {headers.map((header) => (
-          <Th>
-            <ThContent>{header.label}</ThContent>
-          </Th>
+          renderTableHeadCell(header.key, header.label)
         ))}
       </Tr>
     </Thead>

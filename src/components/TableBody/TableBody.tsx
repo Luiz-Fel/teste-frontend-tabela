@@ -2,6 +2,7 @@ import { TableBodyProps } from "../../types/tableProps"
 import { Tbody, Td, Tr } from "./styles"
 
 function TableBody({ data }: TableBodyProps) {
+  // Render the table row with each cell containing data from the Pokemon object
   return (
     <Tbody>
 

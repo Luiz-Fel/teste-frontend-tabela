@@ -1,15 +1,21 @@
 import { TableHeadProps } from "../../types/tableProps";
-import { Th, Thead, Tr } from "./styles";
+import { Th, ThContent, Thead, Tr } from "./styles";
 
-function TableHead({ headers, selectedColumn, sortDirection, sortTable }: TableHeadProps) {
+function TableHead({
+  headers,
+  selectedColumn,
+  sortDirection,
+  sortTable,
+}: TableHeadProps) {
 
-  const icon = sortDirection === "asc" ? "▲" : "▼"
-
+  const icon = sortDirection === "asc" ? "▲" : "▼";
   return (
     <Thead>
       <Tr>
         {headers.map((header) => (
-          <Th>{header.label}</Th>
+          <Th>
+            <ThContent>{header.label}</ThContent>
+          </Th>
         ))}
       </Tr>
     </Thead>

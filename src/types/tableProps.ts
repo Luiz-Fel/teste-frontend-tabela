@@ -15,10 +15,25 @@ export interface TableHeadersProps {
     key: string;
 }
 
+
+/* Components */
+
+
+//Table Component
 export interface TableProps {
     tableData: {
         headers: TableHeadersProps[],
         data: TableRowProps[],
     };
+}
+
+//Table Head Component
+export interface TableHeadProps {
+    headers: TableHeadersProps[];
+}
+
+//Table Body Component
+export interface TableBodyProps {
+    data: TableRowProps[];
 }
   

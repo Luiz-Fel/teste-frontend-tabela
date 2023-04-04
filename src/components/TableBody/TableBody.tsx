@@ -1,8 +1,10 @@
-import React from 'react'
+import { Tbody } from "./Styles"
 
 function TableBody() {
   return (
-    <div>TableBody</div>
+    <Tbody>
+      
+    </Tbody>
   )
 }
 

@@ -1,8 +1,11 @@
 import React from 'react'
+import { Thead } from './Styles'
 
 function TableHead() {
   return (
-    <div>TableHead</div>
+    <Thead>
+      
+    </Thead>
   )
 }
 

@@ -1,8 +1,14 @@
-import React from 'react'
+import TableBody from "../TableBody/TableBody"
+import TableHead from "../TableHead/TableHead"
+import { TableComponent } from "./Styles"
+
 
 function Table() {
   return (
-    <div>Table</div>
+    <TableComponent>
+        <TableHead />
+        <TableBody />
+    </TableComponent>
   )
 }
 

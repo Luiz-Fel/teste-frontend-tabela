@@ -1,12 +1,16 @@
-import React from 'react'
-import { Thead } from './Styles'
+import { TableHeadProps } from "../../types/tableProps";
+import { Th, Thead, Tr } from "./Styles";
 
-function TableHead() {
+function TableHead({ headers }: TableHeadProps) {
   return (
     <Thead>
-      
+      <Tr>
+        {headers.map((header) => (
+          <Th>{header.label}</Th>
+        ))}
+      </Tr>
     </Thead>
-  )
+  );
 }
 
-export default TableHead
+export default TableHead;

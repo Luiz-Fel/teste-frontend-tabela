@@ -2,7 +2,7 @@ import { useState } from "react";
 import { TableProps, TableRowProps } from "../../types/tableProps"
 import TableBody from "../TableBody/TableBody"
 import TableHead from "../TableHead/TableHead"
-import { TableComponent } from "./Styles"
+import { TableComponent } from "./styles"
 
 
 function Table( { tableData : args } : TableProps) {
@@ -17,8 +17,8 @@ function Table( { tableData : args } : TableProps) {
 
   return (
     <TableComponent>
-        <TableHead />
-        <TableBody />
+        <TableHead  headers={headers}/>
+        <TableBody  data={data} />
     </TableComponent>
   )
 }

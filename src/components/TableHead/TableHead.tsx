@@ -1,5 +1,5 @@
 import { TableHeadProps } from "../../types/tableProps";
-import { Th, Thead, Tr } from "./Styles";
+import { Th, Thead, Tr } from "./styles";
 
 function TableHead({ headers }: TableHeadProps) {
   return (

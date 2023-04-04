@@ -1,5 +1,5 @@
 import { TableBodyProps } from "../../types/tableProps"
-import { Tbody, Td, Tr } from "./Styles"
+import { Tbody, Td, Tr } from "./styles"
 
 function TableBody({ data }: TableBodyProps) {
   return (

@@ -5,7 +5,9 @@ import TableHead from "../TableHead/TableHead"
 import { TableComponent } from "./Styles"
 
 
-function Table( { tableData : data } : TableProps) {
+function Table( { tableData : args } : TableProps) {
+
+  const { data, headers } = args; 
 
   const [tableData, setTableData] = useState<TableRowProps[]>(data);
   const [selectedColumn, setSelectedColumn] = useState<string>("");

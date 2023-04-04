@@ -10,7 +10,15 @@ export interface TableRowProps {
     total: number;
 }
 
+export interface TableHeadersProps {
+    label: string;
+    key: string;
+}
+
 export interface TableProps {
-    tableData: TableRowProps[];
+    tableData: {
+        headers: TableHeadersProps[],
+        data: TableRowProps[],
+    };
 }
   

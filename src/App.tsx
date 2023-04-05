@@ -1,6 +1,6 @@
-import './App.css'
 import Table from './components/Table/Table'
 import { tableData } from './data'
+import "./global.css";
 
 function App() {
 
